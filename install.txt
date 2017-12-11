@@ -1,0 +1,33 @@
+apt install vim
+apt install build-essential
+apt install gcc-7 (?) not sure where I got this package from
+apt install cmake
+apt install ninja-build
+apt install git
+apt install curl
+apt install libreadline6
+apt install python # sets system python to 2.7
+
+=== for building neovim ===
+apt install libtool
+apt install libtool-bin
+apt install autoconf
+apt install automake
+apt install pkg-config
+apt install unzip
+
+$ git clone https://github.com/neovim/neovim
+$ cd neovim/
+$ make
+$ rm -r build/
+$ make clean
+$ make CMAKE_BUILD_TYPE=Release
+$ sudo make install
+
+# May see weird characters with neovim if not using gnome-terminal.
+# https://github.com/neovim/neovim/issues/5990
+# Otherwise, in .bashrc:
+export VTE_VERSION="100"
+
+# in .bashrc:
+alias vim='nvim'
