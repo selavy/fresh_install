@@ -37,3 +37,8 @@ export EDITOR=vim
 
 $ git config --global alias.st status
 $ git config --global alias.co checkout
+
+# to edit aliases:
+git config --global -e
+
+ec = config --global -e
