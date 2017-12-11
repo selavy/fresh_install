@@ -31,3 +31,9 @@ export VTE_VERSION="100"
 
 # in .bashrc:
 alias vim='nvim'
+
+# in .bashrc:
+export EDITOR=vim
+
+$ git config --global alias.st status
+$ git config --global alias.co checkout
